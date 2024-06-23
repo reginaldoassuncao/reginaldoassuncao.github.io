@@ -36,6 +36,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -43,6 +49,11 @@ header {
   height: 200px; /* Definindo uma altura fixa */
   object-fit: cover; /* Ajusta a imagem para cobrir toda a área, mantendo a proporção */
   border-bottom: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
 }
 
 .project-details {
